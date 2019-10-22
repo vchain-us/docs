@@ -79,7 +79,7 @@ This extension does not make any modifications to any file. It just inspects dow
 
 So the following should be allowed in the extension option :
 
-![file-access](img/chrome-ext-fileaccess.png)
+![file-access](img/chrome-ext-fileaccess.PNG)
 
 ## Install VCN for Windows
 
