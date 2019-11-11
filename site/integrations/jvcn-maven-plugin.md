@@ -1,4 +1,4 @@
-# JVCN Maven Plugin
+# jvcn maven plugin
 > Maven dependency verification & enforcement via the vChain Code Notary
 platform.
 

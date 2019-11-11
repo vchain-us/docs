@@ -1,4 +1,4 @@
-# Jenkins Integration for vcn
+# Jenkins integration for vcn
 
 ![jenkinslogo](./imgs/Jenkins-Automation.2-768x247.png)
 

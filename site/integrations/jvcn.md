@@ -1,4 +1,4 @@
-# JVCN
+# jvcn
 > Global, de-centralized signing of code and other digital assets.
 
 This package provides JVM bindings for the [Code Notary](https://www.codenotary.io)
