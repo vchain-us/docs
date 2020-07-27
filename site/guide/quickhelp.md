@@ -42,13 +42,13 @@ Codenotary is Open Source and the vcn command is published under GPL3 as Open So
 
 Registering a Codenotary account is performed by visiting the [Codenotary dashboard](https://dashboard.codenotary.io) web site.
 
-![signup](./img/signup_new.png)
+![signup](./img/signup-new.png)
 
 Assuming the email entered is not an existing account, clicking the register button registers the email as a new account.
 
 The next page includes a brief presentation and a link to allow the confirmation email to be resent. The confirmation email contains a link that allows the email address to be confirmed and to continue the process.
 
-![onboard1](./img/unboard-profile.png)
+![onboard1](./img/lets-get-started-new.png)
 
 Account profile information are given here (but can be changed later). Then the next button is used to go to the next step.
 
