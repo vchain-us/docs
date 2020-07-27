@@ -52,7 +52,7 @@ The next page includes a brief presentation and a link to allow the confirmation
 
 Account profile information are given here (but can be changed later). Then the next button is used to go to the next step.
 
-![get started](./img/get-started.png)
+![get started](./img/onboarding-completed.png)
 
 This page is shown for convenience and gives the option to download the command line utility vcn for the various supported operating systems. This page can also be accessed later from the dashboard toolbar and also at [Github](https://github.com/vchain-us/vcn/releases)
 
