@@ -4,8 +4,6 @@
 - [Open Source](#open-source)
 - [Registration](#registration)
 - [Installing the Codenotary tools](#installing-the-codenotary-tools)
-- [Install the Chrome Extension](#install-the-chrome-extension)
-- [Install the Codenotary plugin for Chrome](#install-the-codenotary-plugin-for-chrome)
 - [Install VCN for Windows](#install-vcn-for-windows)
 - [Integrating vcn in the windows PATH variable](#integrating-vcn-in-the-windows-path-variable)
 - [Download integrity check](#download-integrity-check)
@@ -60,32 +58,7 @@ This page is shown for convenience and gives the option to download the command 
 
 ## Installing the Codenotary tools
 
-### Install the Chrome Extension
-
-This step, although optional, is highly recommended as it ensures that all subsequent downloads from Codenotary (and then also from other sources if the assets are notarized) using the Chrome browser are authenticated and genuine.
-
-In the Chrome Webstore search for CodeNotary, install and enable the extension.
-
-This procedure may slightly vary from one version of Chrome to another but is quite straightforward. All URLs should be allowed for the plugin to perform maximum verifications.
-
-### Install the Codenotary plugin for Chrome
-
-The prefered way is to head to the [Chrome extension store](https://chrome.google.com/webstore/category/extensions)
-And then search for “codenotary” - a “vChain Codenotary” extention should show:
-
-![chrome-ext](./img/chrome-ext-1.png)
-
-Add it to Chrome when prompted.
-
-![chrome-ext-2](./img/chrome-ext-2.png)
-
-This extension does not make any modifications to any file. It just inspects downloads to determine if they are notarized, it will be indicated. It however needs to inspect file contents to create a hash.
-
-So the following should be allowed in the extension option :
-
-![file-access](./img/chrome-ext-fileaccess.png)
-
-## Install VCN for Windows
+### Install VCN for Windows
 
 Installing vcn for windows requires a 64 bit windows 10 or better system.
 The vcn for windows tools have 2 versions. The first is a setup version which provides Windows file explorer integration.
@@ -96,7 +69,7 @@ There is also a standalone command line version. The setup version also optional
 
 Besides the fact that the windows executable are signed using CA (Certificate Authority) based signatures for easier Windows integration, they are also notarized using the Codenotary product which allows, at any time, for the product development team to indicate that a specific binary or package is no longer trusted or supported - something the CA based signing system does not permit.
 
-### Integrating vcn in the windows PATH variable
+## Integrating vcn in the windows PATH variable
 
 This is an optional step, but allows easier access to vcn from the command line. In Windows Explorer, right click on the icon that represents the machine and select
 
@@ -119,7 +92,7 @@ Subsequently opening a new Command (cmd) Window or Powershell window, typing the
 
 ## Download integrity check
 
-We advise to verify the integrity of the vcn CLI download using either the CodeNotary Chrome extension, or by dragging and dropping the file on [https://authenticate.codenotary.io/i](https://authenticate.codenotary.io/).
+We advise to verify the integrity of the vcn CLI download by dragging and dropping the file on [https://authenticate.codenotary.io/i](https://authenticate.codenotary.io/).
 
 The vcn Install for Windows has been signed by Digital Certificate release to vChain, Inc., the company behind CodeNotary. As we know, the digital certificate only certifies that the download was not altered, but provides no information on whether it is still trusted or if it has become obsolete, something that the Codenotary product can do.
 
