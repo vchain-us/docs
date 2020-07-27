@@ -50,11 +50,11 @@ The next page includes a brief presentation and a link to allow the confirmation
 
 ![onboard1](./img/lets-get-started-new.png)
 
-Account profile information are given here (but can be changed later). Then the next button is used to go to the next step.
+The account profile information are provided here (and can be changed afterwards). The NEXT  button takes you to the dashboard homepage below.
 
 ![get started](./img/onboarding-completed.png)
 
-This page is shown for convenience and gives the option to download the command line utility vcn for the various supported operating systems. This page can also be accessed later from the dashboard toolbar and also at [Github](https://github.com/vchain-us/vcn/releases)
+The dashboard homepage summarizes all key capabilities of CodeNotary. From here you can download the command line (CLI) utility vcn for the various supported operating systems so that you can notarize and authenticate digital objects from command line or from scripts. The CLI can also be accessed later from the dashboard toolbar and also at [Github](https://github.com/vchain-us/vcn/releases). On this page you have also the list of all available integrations for CodeNotary. Finally you can notarize files and digital objects directly from the homepage with a simple drag&drop of the file(s) in the "Notarize Files" square. 
 
 ## Installing the Codenotary tools
 
