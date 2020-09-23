@@ -72,7 +72,7 @@ const jsvcn = new Jsvcn(config);
 
 #### List of configuration options
 
-| Configuration |  Descrition |
+| Configuration |  Description |
 | --- | --- |
 | credentials  | Credentials for notarization | 
 | mode | Default value: 'api' - Switch between 'api and 'blockchain' mode |
@@ -176,7 +176,7 @@ async function myAuthenticate(){
 
 ### Progress callback (for large files)
 
-Since veriy and sign methods are asyncronous calls it's easy to implement progress indicators (eg. just toggle a variable before and after the call.) But for verify and sign commands we are also providing a progress callback as second parameter which periodically returns with the exact percentage of the file hashing progress. This is really handy when you verify large files and want to display (the real) status of the progress.
+Since verify and sign methods are asynchronous calls it's easy to implement progress indicators (eg. just toggle a variable before and after the call.) But for the commands `verify` and `sign` we are also providing a progress callback as second parameter which periodically returns with the exact percentage of the file hashing progress. This is really handy when you verify large files and want to display (the real) status of the progress.
 
 ``` javascript
 jsvcn.sign(file, (progress) => console.log(progress + '%'));
