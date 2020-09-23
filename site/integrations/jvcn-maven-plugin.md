@@ -42,4 +42,4 @@ dependencies are analysed.
 Enforces that all checked dependencies must be signed by the provided signer.
 
 ## Requirements
-The library requires a Java 8 JVM.
+The library requires Java 8 JVM.
