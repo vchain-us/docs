@@ -185,7 +185,7 @@ chmod +x vcn_bulk_sign.sh && ./vcn_bulk_sign.sh
 > Note that a [CodeNotary](https://codenotary.io) account and a local installation of [vcn](https://github.com/vchain-us/vcn) are needed.
 > Also, make sure your `kubectl` is pointing to the context you want to use. 
 
-### How can I be notified when untrusted images are runnig?
+### How can I be notified when untrusted images are running?
 
 First, Prometheus and Grafana need to be installed in your cluster.
 
