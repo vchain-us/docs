@@ -36,7 +36,7 @@ status `TRUSTED` on the code notary platform.
 
 ##### transitive (default: false)
 Analyses the entire dependency graph of your project. By default, only direct
-dependencies are analysed.
+dependencies are analyzed.
 
 ##### requiredSigner (default: none)
 Enforces that all checked dependencies must be signed by the provided signer.
