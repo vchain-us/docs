@@ -20,13 +20,13 @@
 - [Create alerts on files' or directories' integrity check](#create-alerts-on-files-or-directories-integrity-check)
  - [How to create an alert with CodeNotary](#how-to-create-an-alert-with-codenotary)
  - [Activate the file/directory integrity monitoring](#activate-the-filedirectory-integrity-monitoring)
- - [Add the authentication line to /etc/crontab for periodic autnetication, sudo nano /etc/crontab:](#add-the-authentication-line-to-etccrontab-for-periodic-autnetication-sudo-nano-etccrontab)
+ - [Add the authentication line to /etc/crontab for periodic authentication, sudo nano /etc/crontab:](#add-the-authentication-line-to-etccrontab-for-periodic-autnetication-sudo-nano-etccrontab)
 - [Access to source, opening issues and proposals for enhancements](#access-to-source-opening-issues-and-proposals-for-enhancements)
 - [Cheat sheet](#cheat-sheet)
 - [Resources](#resources)
 - [FAQ](#faq)
 
-CodeNotary has the ambitious goal to become the standard for modern-age code notarization. A true global, decentralized solution to enable secure source to production in your DevOps process in the simplest possible way.
+CodeNotary has the ambitious goal to become the standard for modern-age code notarization. A truly global, decentralized solution to enable secure source to production in your DevOps process in the simplest possible way.
 
 This page explains how you can use the CodeNotary dashboard and vcn command line tool (CLI) to notarize code, documents, and files (globally known as assets) using your CodeNotary account.
 
@@ -50,26 +50,26 @@ The next page includes a brief presentation and a link to allow the confirmation
 
 ![onboard1](./img/lets-get-started-new.png)
 
-The account profile information are provided here (and can be changed afterwards). The NEXT  button takes you to the dashboard homepage below.
+The account profile information is provided here (and can be changed afterwards). The NEXT  button takes you to the dashboard homepage below.
 
 ![get started](./img/onboarding-completed.png)
 
-The dashboard homepage summarizes all key capabilities of CodeNotary. From here you can download the command line (CLI) utility vcn for the various supported operating systems so that you can notarize and authenticate digital objects from command line or from scripts. The CLI can also be accessed later from the dashboard toolbar and also at [Github](https://github.com/vchain-us/vcn/releases). On this page you have also the list of all available integrations for CodeNotary. Finally you can notarize files and digital objects directly from the homepage with a simple drag&drop of the file(s) in the "Notarize Files" square. 
+The dashboard homepage summarizes all key capabilities of CodeNotary. From here you can download the command line (CLI) utility vcn for the various supported operating systems so that you can notarize and authenticate digital objects from command line or from scripts. The CLI can also be accessed later from the dashboard toolbar and also at [Github](https://github.com/vchain-us/vcn/releases). On this page, you have also the list of all available integrations for CodeNotary. Now, you can notarize files and digital objects directly from the homepage with a simple drag&drop of the file(s) in the "Notarize Files" square. 
 
 ## Installing the Codenotary tools
 
 ### Install VCN for Windows
 
 Installing vcn for windows requires a 64 bit windows 10 or better system.
-The vcn for windows tools have 2 versions. The first is a setup version which provides Windows file explorer integration.
+The vcn for windows tools have 2 versions. The first is a setup version that provides Windows file explorer integration.
 
 ![winext](./img/windowsext.png)
 
-There is also a standalone command line version. The setup version also optionally installs the vcn command line interface, and this is recommended. The vcn command line executable is identical between the setup version and the standalone version for any given release, so installing the two version is not required.
+There is also a standalone command line version. The setup version optionally installs the vcn command line interface, and this is recommended. The vcn command line executable is identical between the setup version and the standalone version for any given release, so installing both versions is not required.
 
 Besides the fact that the windows executable are signed using CA (Certificate Authority) based signatures for easier Windows integration, they are also notarized using the Codenotary product which allows, at any time, for the product development team to indicate that a specific binary or package is no longer trusted or supported - something the CA based signing system does not permit.
 
-## Integrating vcn in the windows PATH variable
+## Integrating vcn in the Windows PATH variable
 
 This is an optional step, but allows easier access to vcn from the command line. In Windows Explorer, right click on the icon that represents the machine and select
 
@@ -92,7 +92,7 @@ Subsequently opening a new Command (cmd) Window or Powershell window, typing the
 
 ## Download integrity check
 
-We advise to verify the integrity of the vcn CLI download by dragging and dropping the file on [https://authenticate.codenotary.io/i](https://authenticate.codenotary.io/).
+We advise to verifying the integrity of the vcn CLI download by dragging and dropping the file on [https://authenticate.codenotary.io/i](https://authenticate.codenotary.io/).
 
 The vcn Install for Windows has been signed by Digital Certificate release to vChain, Inc., the company behind CodeNotary. As we know, the digital certificate only certifies that the download was not altered, but provides no information on whether it is still trusted or if it has become obsolete, something that the Codenotary product can do.
 
@@ -104,9 +104,9 @@ The resulting checksum should be identical to the one found in the description a
 
 ## Install vcn CLI for Linux
 
-As for the Windows environment, once the vcn command line binary has been downloaded/installed it should be made available for general users. The simplest way to do this under a Linux operating system is to copy it and make it available under a well known path (for example : /usr/local/bin).
+As for the Windows environment, once the vcn command line binary has been downloaded/installed it should be made available for general users. The simplest way to do this under a Linux operating system is to copy it and make it available under a well-known path (for example : `/usr/local/bin`).
 
-As root (logging in as root, using su or sudo or whatever is appropriate for the target environment) copy the downloaded file to /usr/local/bin/vcn and make it executable with :
+As root (logging in as root, using `su` or `sudo` or whatever is appropriate for the target environment) copy the downloaded file to /usr/local/bin/vcn and make it executable with :
 
     cp vcn-<version downloaded>-linux-amd64 /usr/local/bin/vcn
     chmod +x /usr/local/bin/vcn
@@ -162,7 +162,7 @@ Authenticating (verifying) an asset is the same as was done previously and can b
 
 This is the step where an account holder will indicate how the asset should be viewed to the outside world.
 
-**NOTE : the contents of the asset itself is *NEVER* uploaded to Codenotary or sent anywhere and relies solely on a locally calculated SHA256 hash to ensure uniqueness of the asset, and it is only the hash that is being notarized/signed.**
+**NOTE : the contents of the asset itself are *NEVER* uploaded to Codenotary or sent anywhere and rely solely on a locally calculated SHA256 hash to ensure uniqueness of the asset, and it is only the hash that is being notarized/signed.**
 
 By default (when not notarized) an asset will be seen as *UNKNOWN* because it was never notarized. For example, when authenticating a generated random file this is the expected results.
 
@@ -180,11 +180,11 @@ An additional helpful tool is the possibility to get from the command line the l
 
 ### vcn output format
 
-The output of vcn (all commands) can also be formatted in JSON (Javascript Object Notation) or YAML (Yet Another Markup Language) format if needed for example for scripting or automation since the output will be consistent accross invocations.
+The output of vcn (all commands) can also be formatted in JSON (Javascript Object Notation) or YAML (Yet Another Markup Language) format if needed for example for scripting or automation since the output will be consistent across invocations.
 
 ## Create alerts on files' or directories' integrity check
 
-CodeNotary allows you to monitor and detect changes in files that may indicate a cyber attack. To setup the file/directory integrity monitoring alert, just use the vcn notarize command and include the alert flag. 
+CodeNotary allows you to monitor and detect changes in files that may indicate a cyber attack. To set up the file/directory integrity monitoring alert, just use the vcn notarize command and include the alert flag. 
 
 ### How to create an alert with CodeNotary
 E.g. notarize netplan configuration file:
