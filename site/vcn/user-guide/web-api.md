@@ -39,7 +39,7 @@ Same as authentication, see below.
 ## Authentication
 
 **Endpoint**
-- GET `/authentication/<hash>`
+- GET `/authenticate/<hash>`
 
 **Query params**
 - `signers` comma-separated list of SignerID(s)
