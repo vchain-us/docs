@@ -24,7 +24,6 @@
 - [Access to source, opening issues and proposals for enhancements](#access-to-source-opening-issues-and-proposals-for-enhancements)
 - [Cheat sheet](#cheat-sheet)
 - [Resources](#resources)
-- [FAQ](#faq)
 
 CodeNotary has the ambitious goal to become the standard for modern-age code notarization. A truly global, decentralized solution to enable secure source to production in your DevOps process in the simplest possible way.
 
@@ -252,7 +251,3 @@ The following Cheat Sheet has been compiled to have a quick reference card at ha
 
 - [Codenotary site/dashboard](https://dashboard.codenotary.io)
 - [Github repository](https://github.com/vchain-us/vcn) which also contains work in progress, the github issue/ticket system and more.
-
-## FAQ
-
-If you have any questions that haven’t been covered in our quick guide, please also check our [FAQ](http://www.codenotary.io/faq/) page.
