@@ -9,9 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "vuepress": "^1.4.0"
+    "vuepress": "^0.14.11"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vchain-us/docs.git"
