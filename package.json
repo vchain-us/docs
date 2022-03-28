@@ -5,13 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "vuepress dev site",
-    "build": "vuepress build site",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vuepress build site"
   },
   "dependencies": {
-    "vuepress": "^1.4.0"
+    "vuepress": "^1.9.7"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vchain-us/docs.git"

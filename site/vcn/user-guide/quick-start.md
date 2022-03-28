@@ -24,8 +24,8 @@ Authentication is always free and can be performed by anyone, anywhere, at any t
 
 Examples:
 ```
-vcn authenticate <file>
-vcn authenticate dir://<directory>
+vcn authenticate <file />
+vcn authenticate dir://<directory />
 vcn authenticate docker://<imageId>
 vcn authenticate podman://<imageId>
 vcn authenticate git://<path_to_git_repo>
@@ -50,8 +50,8 @@ vcn login
 Once your secret is set you can notarize assets like in the following examples:
 
 ```
-vcn notarize <file>
-vcn notarize dir://<directory>
+vcn notarize <file />
+vcn notarize dir://<directory />
 vcn notarize docker://<imageId>
 vcn notarize podman://<imageId>
 vcn notarize git://<path_to_git_repo>

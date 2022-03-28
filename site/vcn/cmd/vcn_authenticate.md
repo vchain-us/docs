@@ -23,12 +23,12 @@ Assets are referenced by the passed ARG(s), with authentication accepting
 same time while passing them within ARG(s).
 
 ARG must be one of:
-  <file>
-  file://<file>
-  dir://<directory>
-  git://<repository>
-  docker://<image>
-  podman://<image>
+  <file />
+  file://<file />
+  dir://<directory />
+  git://<repository />
+  docker://<image />
+  podman://<image />
 
 
 ```

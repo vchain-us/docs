@@ -23,12 +23,12 @@ Assets are referenced by passed ARG(s) with unsupport command only accepting
 
 
 ARG must be one of:
-  <file>
-  file://<file>
-  dir://<directory>
-  git://<repository>
-  docker://<image>
-  podman://<image>
+  <file />
+  file://<file />
+  dir://<directory />
+  git://<repository />
+  docker://<image />
+  podman://<image />
 
 
 ```
