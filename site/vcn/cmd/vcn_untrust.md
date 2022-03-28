@@ -22,12 +22,12 @@ Assets are referenced by passed ARG(s) with untrust command only accepting
 1 ARG at a time. 
 
 ARG must be one of:
-  <file>
-  file://<file>
-  dir://<directory>
-  git://<repository>
-  docker://<image>
-  podman://<image>
+  <file />
+  file://<file />
+  dir://<directory />
+  git://<repository />
+  docker://<image />
+  podman://<image />
 
 
 ```
