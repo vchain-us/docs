@@ -1,6 +1,6 @@
 # Organizations
 
-CodeNotary’s organizational management feature set allows an enterprise user to create an organization for their company. Created organizations are then stored on the blockchain where they provide 100% verification transparency of their authenticated digital assets
+Codenotary’s organizational management feature set allows an enterprise user to create an organization for their company. Created organizations are then stored on the blockchain where they provide 100% verification transparency of their authenticated digital assets
 
 ## List of your organizations
 

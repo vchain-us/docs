@@ -1,10 +1,10 @@
 ## vcn
 
-vChain CodeNotary - Notarize and authenticate, from code to production
+vChain Codenotary - Notarize and authenticate, from code to production
 
 ### Synopsis
 
-vChain CodeNotary - Notarize and authenticate, from code to production
+vChain Codenotary - Notarize and authenticate, from code to production
 
 ### Options
 

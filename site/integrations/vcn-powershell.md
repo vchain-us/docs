@@ -1,10 +1,10 @@
 # vcn-powershell
-[PowerShell Scripts for CodeNotary vcn](https://github.com/vchain-us/vcn-powershell)
+[PowerShell Scripts for Codenotary vcn](https://github.com/vchain-us/vcn-powershell)
 
 ## vcn-folder-watch.ps
-That Powershell script watches a defined directory on your system and notarizes files that are stored here using your [CodeNotary.io account ](https://dashboard.codenotary.io/auth/signup)
+That Powershell script watches a defined directory on your system and notarizes files that are stored here using your [Codenotary.io account ](https://dashboard.codenotary.io/auth/signup)
 
-Make sure to download the vcn binary as well: [CodeNotary vcn cli](https://github.com/vchain-us/vcn/releases/latest)
+Make sure to download the vcn binary as well: [Codenotary vcn cli](https://github.com/vchain-us/vcn/releases/latest)
 
 You only need to change the variables in the beginning of the script according to your environment:
 - $vcnpath
@@ -17,17 +17,17 @@ If you want to fully automated, please set the following environment variables:
 - VCN_PASSWORD
 - VCN_NOTARIZATION_PASSWORD
 
-You can learn more about that here: [CodeNotary vcn environment](https://docs.codenotary.io/vcn/user-guide/environments.html)
+You can learn more about that here: [Codenotary vcn environment](https://docs.codenotary.io/vcn/user-guide/environments.html)
 
 ## vcn-folder-workflow.ps1
 extension of vcn-folder-watch.ps to support a simple trust workflow, when files are created or moved into the specific folder. Only the last notarization action counts.
 
-- All newly created files in C:\CodeNotary\Production will be trusted
-- All newly created files in C:\CodeNotary\Old will be untrusted
-- All newly created files in C:\CodeNotary\Unwanted will be unsupported
+- All newly created files in C:\Codenotary\Production will be trusted
+- All newly created files in C:\Codenotary\Old will be untrusted
+- All newly created files in C:\Codenotary\Unwanted will be unsupported
 
 ## function-Get-CNAuthenticate.ps1
-Get-Function to authenticate an existing file with CodeNotary.io and return the result as json
+Get-Function to authenticate an existing file with Codenotary.io and return the result as json
 
 Load the function in your PowerShell session
 `. .\function-Get-CNAuthenticate.ps1`

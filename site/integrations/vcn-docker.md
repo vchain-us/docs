@@ -25,7 +25,7 @@ Or use the command with a tag:
 vcn sign docker://hello-world:v1
 ```
 
-*To be able to sign, you need to register at [CodeNotary](https://dashboard.codenotary.io/) for a free trial account.
+*To be able to sign, you need to register at [Codenotary](https://dashboard.codenotary.io/) for a free trial account.
 
 ## Docker Sidecar Integration
 
