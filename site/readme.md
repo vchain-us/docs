@@ -1,8 +1,9 @@
 ---
 home: true
 heroImage: '/codenotary-mascot.png'
-actionText: 🚀Start here! 
-actionLink: /guide/quickhelp
+actions: 
+- text: 🚀Start here! 
+  link: /guide/quickhelp
 features:
 - title: Integrity and Authenticity always
   details: Notarize your software assets and ensure their integrity and authenticity at any time
