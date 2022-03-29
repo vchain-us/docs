@@ -1,7 +1,7 @@
 # Quick start
 
 ## Overview
-`vcn` is the *Command Line Interface* for the CodeNotary platform. Basically, it can [notarize and authenticate](notarization.md) any of the following kind of assets:
+`vcn` is the *Command Line Interface* for the Codenotary platform. Basically, it can [notarize and authenticate](notarization.md) any of the following kind of assets:
 
 - a **file**
 - an entire **directory** (by prefixing the directory path with `dir://`)
@@ -24,8 +24,8 @@ Authentication is always free and can be performed by anyone, anywhere, at any t
 
 Examples:
 ```
-vcn authenticate <file />
-vcn authenticate dir://<directory />
+vcn authenticate <file>
+vcn authenticate dir://<directory>
 vcn authenticate docker://<imageId>
 vcn authenticate podman://<imageId>
 vcn authenticate git://<path_to_git_repo>

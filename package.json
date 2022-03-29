@@ -1,14 +1,11 @@
 {
   "name": "codenotary-docs",
   "version": "1.0.0",
-  "description": "CodeNotary Documentation",
+  "description": "Codenotary Documentation",
   "main": "index.js",
   "scripts": {
-    "start": "vuepress dev site",
+    "dev": "vuepress dev site",
     "build": "vuepress build site"
-  },
-  "dependencies": {
-    "vuepress": "^1.9.7"
   },
   "repository": {
     "type": "git",
@@ -23,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/vchain-us/docs/issues"
   },
-  "homepage": "https://github.com/vchain-us/docs#readme"
+  "homepage": "https://github.com/vchain-us/docs#readme",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.36"
+  }
 }

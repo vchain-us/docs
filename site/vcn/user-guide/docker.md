@@ -19,7 +19,7 @@ or using a tag
 vcn notarize docker://hello-world:v1
 ```
 
-To be able to notarize, you need to register at [CodeNotary](https://dashboard.codenotary.io) and get an account.
+To be able to notarize, you need to register at [Codenotary](https://dashboard.codenotary.io) and get an account.
 
 ### Authenticate a local docker image
 

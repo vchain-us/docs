@@ -10,11 +10,11 @@ You can show and hide the asset list columns by clicking on the 'vertical dots' 
 
 ## Top 10 Assets
 
-You see this section only when you don't have own notarized assets yet. Top 10 Assets shows the top notarized assets in the CodeNotary.io system.
+You see this section only when you don't have own notarized assets yet. Top 10 Assets shows the top notarized assets in the Codenotary.io system.
 
 ## Timeline
 
-The timeline feed shows different kinds of events generated in the CodeNotary.io system:
+The timeline feed shows different kinds of events generated in the Codenotary.io system:
 
 - User events like registering, first login, etc.
 - Asset-related events - everytime you notarize, authenticate your assets

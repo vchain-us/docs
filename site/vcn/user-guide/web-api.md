@@ -2,7 +2,7 @@
 
 Notarization and authentication can also be used via a simple HTTP API. You can use:
 
-- the CodeNotary hosted API at https://api.codenotary.io/
+- the Codenotary hosted API at https://api.codenotary.io/
 - or a local web server exposing the same API by running the `vcn serve` command
 
 All endpoints accept *Basic Auth* with user credentials (mantatory for notarization).
@@ -102,7 +102,7 @@ Example of a trusted asset with all field populated:
   "createdAt": "2019-09-25T14:01:23.159792",
   "verificationCount": 3,
   "signerCount": 1,
-  "signer": "leonardo@vchain.us",
+  "signer": "user@vchain.us",
   "company": "vChain",
   "website": "https://codenotary.io",
   "verification": {

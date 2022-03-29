@@ -1,4 +1,4 @@
-## CodeNotary Docs 
+## Codenotary Docs 
 
 Site: [docs.codenotary.io](https://docs.codenotary.io/)
 

@@ -1,0 +1,41 @@
+{
+	"name": "Codenotary Documentation",
+	"short_name": "Codenotary Documentation",
+	"description": "Codenotary Documentation",
+	"start_url": "/index.html",
+	"display": "standalone",
+	"background_color": "#fff",
+	"theme_color": "#244583",
+	"icons": [
+		{
+			"src": "/images/icons/favicon.ico",
+			"type": "image/x-icon",
+			"sizes": "any"
+		},
+		{
+			"src": "/images/icons/favicon-16.png",
+			"type": "image/png",
+			"sizes": "16x16"
+		},
+		{
+			"src": "/images/icons/favicon-32.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		},
+		{
+			"src": "/images/icons/apple-touch-icon.png",
+			"type": "image/png",
+			"sizes": "180x180"
+		},
+		{
+			"src": "/images/icons/favicon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/images/icons/favicon-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	]
+}

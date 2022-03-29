@@ -1,10 +1,10 @@
 # jsvcn
 
-#### CodeNotary - JavaScript Client 
+#### Codenotary - JavaScript Client 
 
 > Global, de-centralized signing of code and other digital assets.
 
-This [package](https://github.com/vchain-us/jsvcn) provides an easy to use javascript client for the [CodeNotary](https://www.codenotary.io)
+This [package](https://github.com/vchain-us/jsvcn) provides an easy to use javascript client for the [Codenotary](https://www.codenotary.io)
 platform. 
 
 ## Features: 
@@ -15,8 +15,8 @@ platform.
 ## Demo
 
 - [Demo App - Vue.js](https://vchain-us.github.io/jsvcn/) ([source](https://github.com/vchain-us/jsvcn/tree/master/example))
-- [CodeNotary Authenticate App](https://authenticate.codenotary.io/)
-- [CodeNotary Chrome Extension](https://chrome.google.com/webstore/detail/vchain-codenotary-downloa/mnloemedehacppeggbipipjlphdjpjcb)
+- [Codenotary Authenticate App](https://authenticate.codenotary.io/)
+- [Codenotary Chrome Extension](https://chrome.google.com/webstore/detail/vchain-codenotary-downloa/mnloemedehacppeggbipipjlphdjpjcb)
 
 ## Install: 
 
@@ -77,10 +77,10 @@ const jsvcn = new Jsvcn(config);
 | credentials  | Credentials for notarization | 
 | mode | Default value: 'api' - Switch between 'api and 'blockchain' mode |
 | checksums | Default value: ['sha256'] You can add more hash algorithms to get the hashed file's checksums.  | 
-| validationOnly | Default: false. Blockchain mode only. Set it to true in case you don't want to query asset details from the CodeNotary Asset Server (faster response) |
-| apiUrl | Custom CodeNotary API url - overwrite this if you use local vcn api |
-| blockchainUrl | CodeNotary Blockchain url - overwrite this if you want to use staging |
-| assetUrl |  CodeNotary Asset Server url - overwrite this if you want to use staging  |
+| validationOnly | Default: false. Blockchain mode only. Set it to true in case you don't want to query asset details from the Codenotary Asset Server (faster response) |
+| apiUrl | Custom Codenotary API url - overwrite this if you use local vcn api |
+| blockchainUrl | Codenotary Blockchain url - overwrite this if you want to use staging |
+| assetUrl |  Codenotary Asset Server url - overwrite this if you want to use staging  |
 | blockchainAssetAddress |  Custom Contract address - for staging | 
 | blockchainOrganizationAddress |  Custom Org. Contract address - for staging | 
 
@@ -95,7 +95,7 @@ jsvcn.verify(file).then((response) => {
 })
 ```
 
-More information about the response format: [#] (CodeNotary API Documentation])
+More information about the response format: [#] (Codenotary API Documentation])
 
 ### Authentication with Organization
 
@@ -121,7 +121,7 @@ jsvcn.sign(file).then((response) => {
 })
 ```
 
-For notarization you need to pass valid CodeNotary user credentials in the config: 
+For notarization you need to pass valid Codenotary user credentials in the config: 
 
 ```javascript
 
@@ -135,7 +135,7 @@ const jsvcn = new Jsvcn({
 );
 ```
 
-More information about the response format: [#] (CodeNotary API Documentation])
+More information about the response format: [#] (Codenotary API Documentation])
 
 ## Untrust / Unsupport 
 
@@ -185,7 +185,7 @@ jsvcn.sign(file, (progress) => console.log(progress + '%'));
 
 ### Calculate Checksums
 
-CodeNotary.io uses SHA256 algorithm to calculate and compare file hashes, but our library can also provide SHA1, SHA512, MD5 checksums of the file. You can add "checksums" attribute to the config object with an array of checksums you want to get back from the verify method.
+Codenotary.io uses SHA256 algorithm to calculate and compare file hashes, but our library can also provide SHA1, SHA512, MD5 checksums of the file. You can add "checksums" attribute to the config object with an array of checksums you want to get back from the verify method.
 
 ``` javascript
 const jsvcn = new Jsvcn({checksums: ["sha1", "md5"]});
@@ -193,9 +193,9 @@ const jsvcn = new Jsvcn({checksums: ["sha1", "md5"]});
 ``` 
 
 
-### Authentication directly via the CodeNotary Blockchain with Ethers.js
+### Authentication directly via the Codenotary Blockchain with Ethers.js
 
-If you want to directly authenticate assets with CodeNotary Blockchain add this to your html page:
+If you want to directly authenticate assets with Codenotary Blockchain add this to your html page:
 
 ```
 <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" type="text/javascript"></script>

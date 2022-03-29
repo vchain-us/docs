@@ -1,10 +1,14 @@
+const { path } = require('@vuepress/utils')
+
 module.exports = {
-	title: 'CodeNotary Documentation',
-	description: ' ',
+	title: 'Codenotary Documentation',
+	description: 'Codenotary Documentation',
 	dest: './docs',
+	theme: path.resolve(__dirname, './theme'),
 	themeConfig: {
-		logo: '/codenotary-mascot.png',
-		nav: [
+		logo: '/images/icons/favicon.svg',
+		head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
+		navbar: [
 			{ text: 'Website', link: 'https://www.codenotary.io' },
 			{ text: 'Github', link: 'https://github.com/vchain-us' },
 		],

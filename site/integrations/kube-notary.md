@@ -1,19 +1,19 @@
 # kube-notary
-> A Kubernetes watchdog for verifying image trust with CodeNotary.
+> A Kubernetes watchdog for verifying image trust with Codenotary.
 
-![alt text](https://raw.githubusercontent.com/vchain-us/kube-notary/master/docs/images/info.png "CodeNotary for Kubernetes")
+![alt text](https://raw.githubusercontent.com/vchain-us/kube-notary/master/docs/images/info.png "Codenotary for Kubernetes")
 
 ## How it works
 
-**kube-notary** is a monitoring tool for *Continuous Verification* (CV) via [CodeNotary](https://codenotary.io). 
+**kube-notary** is a monitoring tool for *Continuous Verification* (CV) via [Codenotary](https://codenotary.io). 
 The idea behind CV is to continuously monitor your cluster at runtime and be notified when unknown or untrusted container images are running.
 
 Once `kube-notary` is installed within your cluster, all pods are checked every minute (interval and other settings can be [configured](#Configuration)). 
-For each of the running containers in each pod, `kube-notary` resolves the `ImageID` of the container's image to the actual image's hash and finally looks up the [hash's signature in the CodeNotary's blockchain](https://github.com/vchain-us/vcn/blob/master/docs/user-guide/signatures.md#signatures).
+For each of the running containers in each pod, `kube-notary` resolves the `ImageID` of the container's image to the actual image's hash and finally looks up the [hash's signature in the Codenotary's blockchain](https://github.com/vchain-us/vcn/blob/master/docs/user-guide/signatures.md#signatures).
 
 Furthermore, kube-notary provides a built-in exporter for sending verification [metrics](#Metrics) to Prometheus, which can then that can be easily visualized with the provided [grafana dashboard](grafana). 
 
-Images you trust can be signed by using the CodeNotary [vcn](https://github.com/vchain-us/vcn) CLI tool.
+Images you trust can be signed by using the Codenotary [vcn](https://github.com/vchain-us/vcn) CLI tool.
 
 https://infograph.venngage.com/ps/ex4ECrROPCQ/codenotary-for-kubernetes
 
@@ -182,7 +182,7 @@ Export `POD_NAME` setting it to the `kube-notary`'s pod name, then run:
 kubectl exec --namespace default -t $POD_NAME sh /bin/bulk_sign > vcn_bulk_sign.sh
 chmod +x vcn_bulk_sign.sh && ./vcn_bulk_sign.sh
 ```
-> Note that a [CodeNotary](https://codenotary.io) account and a local installation of [vcn](https://github.com/vchain-us/vcn) are needed.
+> Note that a [Codenotary](https://codenotary.io) account and a local installation of [vcn](https://github.com/vchain-us/vcn) are needed.
 > Also, make sure your `kubectl` is pointing to the context you want to use. 
 
 ### How can I be notified when untrusted images are running?

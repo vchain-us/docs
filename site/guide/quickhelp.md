@@ -18,20 +18,20 @@
  - [vcn list](#vcn-list)
  - [vcn output format](#vcn-output-format)
 - [Create alerts on files' or directories' integrity check](#create-alerts-on-files-or-directories-integrity-check)
- - [How to create an alert with CodeNotary](#how-to-create-an-alert-with-codenotary)
+ - [How to create an alert with Codenotary](#how-to-create-an-alert-with-codenotary)
  - [Activate the file/directory integrity monitoring](#activate-the-filedirectory-integrity-monitoring)
  - [Add the authentication line to /etc/crontab for periodic authentication, sudo nano /etc/crontab:](#add-the-authentication-line-to-etccrontab-for-periodic-autnetication-sudo-nano-etccrontab)
 - [Access to source, opening issues and proposals for enhancements](#access-to-source-opening-issues-and-proposals-for-enhancements)
 - [Cheat sheet](#cheat-sheet)
 - [Resources](#resources)
 
-CodeNotary has the ambitious goal to become the standard for modern-age code notarization. A truly global, decentralized solution to enable secure source to production in your DevOps process in the simplest possible way.
+Codenotary has the ambitious goal to become the standard for modern-age code notarization. A truly global, decentralized solution to enable secure source to production in your DevOps process in the simplest possible way.
 
-This page explains how you can use the CodeNotary dashboard and vcn command line tool (CLI) to notarize code, documents, and files (globally known as assets) using your CodeNotary account.
+This page explains how you can use the Codenotary dashboard and vcn command line tool (CLI) to notarize code, documents, and files (globally known as assets) using your Codenotary account.
 
 When code is notarized, a unique hash is created for the digital asset and notarized with your unique identity. This guarantees that the file integrity is stored in a tamper-proof way. File integrity doesn’t judge the file content. What it does do however is ensure the asset has not been modified since it was notarized.
 
-This quick help guide gives a brief explanation and ways to use the CodeNotary CLI (vcn), and how to notarize (sign) and authenticate (verify)
+This quick help guide gives a brief explanation and ways to use the Codenotary CLI (vcn), and how to notarize (sign) and authenticate (verify)
 
 ## Open Source
 
@@ -53,7 +53,7 @@ The account profile information is provided here (and can be changed afterwards)
 
 ![get started](./img/onboarding-completed.png)
 
-The dashboard homepage summarizes all key capabilities of CodeNotary. From here you can download the command line (CLI) utility vcn for the various supported operating systems so that you can notarize and authenticate digital objects from command line or from scripts. The CLI can also be accessed later from the dashboard toolbar and also at [Github](https://github.com/vchain-us/vcn/releases). On this page, you have also the list of all available integrations for CodeNotary. Now, you can notarize files and digital objects directly from the homepage with a simple drag&drop of the file(s) in the "Notarize Files" square. 
+The dashboard homepage summarizes all key capabilities of Codenotary. From here you can download the command line (CLI) utility vcn for the various supported operating systems so that you can notarize and authenticate digital objects from command line or from scripts. The CLI can also be accessed later from the dashboard toolbar and also at [Github](https://github.com/vchain-us/vcn/releases). On this page, you have also the list of all available integrations for Codenotary. Now, you can notarize files and digital objects directly from the homepage with a simple drag&drop of the file(s) in the "Notarize Files" square. 
 
 ## Installing the Codenotary tools
 
@@ -79,7 +79,7 @@ This is an optional step, but allows easier access to vcn from the command line.
 ![winenvvar1](./img/winenvvar1.png)
 
 - Double click on the environment variable Path for the current user
-- Add an entry named %PROGRAMFILES%\CodeNotary and click OK
+- Add an entry named %PROGRAMFILES%\Codenotary and click OK
 
 ![winenvvar2](./img/winenvvar2.png)
 
@@ -93,13 +93,13 @@ Subsequently opening a new Command (cmd) Window or Powershell window, typing the
 
 We advise to verifying the integrity of the vcn CLI download by dragging and dropping the file on [https://authenticate.codenotary.io/i](https://authenticate.codenotary.io/).
 
-The vcn Install for Windows has been signed by Digital Certificate release to vChain, Inc., the company behind CodeNotary. As we know, the digital certificate only certifies that the download was not altered, but provides no information on whether it is still trusted or if it has become obsolete, something that the Codenotary product can do.
+The vcn Install for Windows has been signed by Digital Certificate release to vChain, Inc., the company behind Codenotary. As we know, the digital certificate only certifies that the download was not altered, but provides no information on whether it is still trusted or if it has become obsolete, something that the Codenotary product can do.
 
 When using Linux, we advise to verify the checksum of the downloaded file with the following command:
 
     sha256sum vcn-<version downloaded>-linux-amd64
 
-The resulting checksum should be identical to the one found in the description at [Github](https://github.com/vchain-us/vcn/releases). Similar to the digital certificate for Windows, the checksum only ensures the file’s contents integrity, not it’s support status which is ensured using CodeNotary itself.
+The resulting checksum should be identical to the one found in the description at [Github](https://github.com/vchain-us/vcn/releases). Similar to the digital certificate for Windows, the checksum only ensures the file’s contents integrity, not it’s support status which is ensured using Codenotary itself.
 
 ## Install vcn CLI for Linux
 
@@ -148,10 +148,10 @@ The login password is the one used during registration.
 
 Codenotary vcn can authenticate/notarize/inspect a wide range (and expanding) type of assets. This includes :
 
-- A file by simply specifying the file name or file://\<file\>
-- A docker image by specifying docker://\<image name or image ID\>
-- A directory with dir://\<directory\>
-- A git repository with git://\<local repository directory\> which addresses the current git commit
+- A file by simply specifying the file name or `file://<file>`
+- A docker image by specifying `docker://<image name or image ID>`
+- A directory with `dir://<directory>`
+- A git repository with `git://<local repository directory>` which addresses the current git commit
 
 ### vcn authenticate (any asset)
 
@@ -183,9 +183,9 @@ The output of vcn (all commands) can also be formatted in JSON (Javascript Objec
 
 ## Create alerts on files' or directories' integrity check
 
-CodeNotary allows you to monitor and detect changes in files that may indicate a cyber attack. To set up the file/directory integrity monitoring alert, just use the vcn notarize command and include the alert flag. 
+Codenotary allows you to monitor and detect changes in files that may indicate a cyber attack. To set up the file/directory integrity monitoring alert, just use the vcn notarize command and include the alert flag. 
 
-### How to create an alert with CodeNotary
+### How to create an alert with Codenotary
 E.g. notarize netplan configuration file:
 
     vcn notarize --create-alert --alert-name "netplan config of DESKTOP-82S443U" /etc/netplan/50-cloud-init.yaml
@@ -214,11 +214,11 @@ It also makes sense to add that command to your cron job.
     # One command, as elivated user:
     echo "*/5 * * * * username /usr/local/bin/vcn authenticate --alerts" >> /etc/crontab
 
-That cron job runs every 5 minutes the CodeNotary authenticate job. As CodeNotary has a “dead man switch” built in, an alert will be triggered as well, if no authenticate command will be received for one hour.
+That cron job runs every 5 minutes the Codenotary authenticate job. As Codenotary has a “dead man switch” built in, an alert will be triggered as well, if no authenticate command will be received for one hour.
 
 ## Check the existing file integrity alerts
 
-When logging into the CodeNotary dashboard, you can find your configured file integrity monitoring alerts in the Alerts section. That way you can see all the alerts of all your systems.
+When logging into the Codenotary dashboard, you can find your configured file integrity monitoring alerts in the Alerts section. That way you can see all the alerts of all your systems.
 
 ![check-alerts-on-dashboard](./img/db-alerts.png)
 

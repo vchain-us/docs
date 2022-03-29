@@ -91,6 +91,6 @@ Lastly, you will need to execute this snippet in the deployment process:
 vcn authenticate docker://gcr.io/vchain-ops/vcn:stable && your_deploy_script.sh
 ```
 
-And that’s it. You’re now ready to have vChain CodeNotary provide a perpetually running integrity check into all of your Jenkins build deployment pipeline, as well as ensure you are participating in the latest DevSecOps best practices.
+And that’s it. You’re now ready to have vChain Codenotary provide a perpetually running integrity check into all of your Jenkins build deployment pipeline, as well as ensure you are participating in the latest DevSecOps best practices.
 
 [Sign up for a free trial and test the Jenkins integration out for yourself.](https://dashboard.codenotary.io/auth/signup)

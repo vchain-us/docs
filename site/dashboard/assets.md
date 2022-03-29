@@ -1,7 +1,7 @@
 # My Assets
 
 ### What is an asset?
-In CodeNotary terms, an asset is anything digital that is made up of 1’s and 0’s. Of course, the binary level is as base as it gets and there are scaled degrees of larger digital scaffolding of all sizes including snippets, images, containers, programs, apps, backups, etc. All assets can have their digital integrity authenticated anytime, anywhere. And CodeNotary’s dashboard makes it easy to manage all your assets in the same place.
+In Codenotary terms, an asset is anything digital that is made up of 1’s and 0’s. Of course, the binary level is as base as it gets and there are scaled degrees of larger digital scaffolding of all sizes including snippets, images, containers, programs, apps, backups, etc. All assets can have their digital integrity authenticated anytime, anywhere. And Codenotary’s dashboard makes it easy to manage all your assets in the same place.
 
 ## Verified counter
 Displays the number of authentications (on your assets)
@@ -68,7 +68,7 @@ Asset visibility - possible values are: Public / Private
 
 - Level -1  **DISABLED** - The signer's account is disabled.
 - Level 0 **UNKNOWN** - The signer's identity is unknown.
-- Level 1 **EMAIL_VERIFIED** - The signer's email is verified by CodeNotary platform.
+- Level 1 **EMAIL_VERIFIED** - The signer's email is verified by Codenotary platform.
 - Level 2 **SOCIAL_VERIFIED** - The signer's identity is verified by social media profiles.
 - Level 3 **ID_VERIFIED** - The signer provided an ID document.
 - Level 4 **LOCATION_VERIFIED** - The signer provided a proof-of-address.
@@ -93,6 +93,6 @@ You'll be forwarded to the ZTC Blockchain explorer and the transaction you click
 ![Transaction details on the ZTC Blockchain explorer](./img/copy-inputdata.png "ZTC Blockchain Explorer")
 
 You can also copy the input data to your clipboard to convert it into human readable data.
-Simply paste (1) the copied input data into [decode service of CodeNotary](https://decode.codenotary.io) and click decode (2) and select the hash value (3) to see even more details:
+Simply paste (1) the copied input data into [decode service of Codenotary](https://decode.codenotary.io) and click decode (2) and select the hash value (3) to see even more details:
 
-![Decoding the ZTC Blockchain data of CodeNotary](./img/decode.png "CodeNotary Decode Service")
+![Decoding the ZTC Blockchain data of Codenotary](./img/decode.png "Codenotary Decode Service")

@@ -10,7 +10,7 @@ Note: If the user later changes their trust [level](#Levels), the assets they no
 
 **Part 2 of Notarization - Testifying to an Asset’s Trustworthiness**
 
-CodeNotary allows users to independently testify to an asset’s trust [status](#Statuses) and immutably store their attestation on the blockchain through the notarization process. The notary process is initiated by a user (the signer) and executed by running the command: 
+Codenotary allows users to independently testify to an asset’s trust [status](#Statuses) and immutably store their attestation on the blockchain through the notarization process. The notary process is initiated by a user (the signer) and executed by running the command: 
 
 - `vcn notarize` which sets the asset’s [status](#Statuses) equal to **TRUSTED**
 
@@ -20,7 +20,7 @@ CodeNotary allows users to independently testify to an asset’s trust [status](
 
 When the signer initiates the notarization process, their block of digital data (*the asset*) is input into a [SHA-256](https://en.wikipedia.org/wiki/SHA-2) hashing function in order to produce their asset’s unique digital fingerprint. (The digital fingerprint is also known as the digest or simply *the hash*.)
 
-Then, the hash (not the asset itself, which is never uploaded to nor shared with CodeNotary) along with the desired [status](#Statuses) is cryptographically signed by using the signer's secret (private key). Signing takes place locally on the signer’s machine. 
+Then, the hash (not the asset itself, which is never uploaded to nor shared with Codenotary) along with the desired [status](#Statuses) is cryptographically signed by using the signer's secret (private key). Signing takes place locally on the signer’s machine. 
 Once signed, this metadata (i.e. the signed hash and status) is sent to a Smart Contract on the blockchain. The Smart Contract then adds the signer’s trust [level](#Levels) and a timestamp to the already existing metadata. 
 
 In the end, the output of the notarization process is a new entry on the [ZTC](https://zerotrustconsortium.org/) blockchain, where it remains forever and can never be changed. The entry contains the asset’s signed hash, signed [status](#Statuses), [level](#Levels), and timestamp, which are all bound together.  Attribute mapping and descriptions are below:
@@ -51,7 +51,7 @@ Authentication is always free and can be performed by anyone, anywhere, at any t
 
 ### Authentication of Co-notarized Assets
 
-CodeNotary's `vcn` application allows multiple users to notarize the same asset. The act is known as co-notarization. By default, when running the command `vcn authenticate`, a user’s last blockchain entry for the asset will be returned to them when they are logged in, regardless if the asset was co-notarized. However, all other users will be returned the last blockchain entry made by the user with the highest trust level. 
+Codenotary's `vcn` application allows multiple users to notarize the same asset. The act is known as co-notarization. By default, when running the command `vcn authenticate`, a user’s last blockchain entry for the asset will be returned to them when they are logged in, regardless if the asset was co-notarized. However, all other users will be returned the last blockchain entry made by the user with the highest trust level. 
 
 Alternatively, it is also possible to retrieve the authentication matching a specific signer (a user or an organization) using the flag `--signerID`.
 
@@ -70,7 +70,7 @@ Level | Label | Description
 ------------ | ------------- | ------------- 
 -1 | **DISABLED** | The signer's account is disabled.
 0 | **UNKNOWN** | The signer's identity is unknown.
-1 | **EMAIL_VERIFIED** | The signer's email is verified by CodeNotary platform.
+1 | **EMAIL_VERIFIED** | The signer's email is verified by Codenotary platform.
 2 | **SOCIAL_VERIFIED** | The signer's identity is verified by social media profiles.
 3 | **ID_VERIFIED** | The signer provided an ID document.
 4 | **LOCATION_VERIFIED** | The signer provided a proof-of-address.
@@ -80,11 +80,11 @@ Level | Label | Description
 
 ### Who/what is performing the act of notarization?
 
-  Notarization is performed by a combination of user action, CodeNotary OpenSource software, and a CodeNotary smart contract.
+  Notarization is performed by a combination of user action, Codenotary OpenSource software, and a Codenotary smart contract.
  
 ### Who is the witness?
 
-  The CodeNotary smart contract and every member node of ZTC blockchain are the witnesses who attest to the authenticity of the records stored on the blockchain. 
+  The Codenotary smart contract and every member node of ZTC blockchain are the witnesses who attest to the authenticity of the records stored on the blockchain. 
  
 ### Who guarantees that nothing gets changed after the notarization has been processed?
 
