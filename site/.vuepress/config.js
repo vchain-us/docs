@@ -1,12 +1,13 @@
+const { path } = require('@vuepress/utils')
+const fs = (slug) => path.resolve(__dirname, slug)
+
 module.exports = {
 	title: 'Codenotary Documentation',
 	description: 'Codenotary Documentation',
 	dest: './docs',
-	plugins: [
-		'@vuepress/plugin-palette',
-	],
+	theme: fs('./theme'),
 	themeConfig: {
-		logo: '/codenotary-mascot.png',
+		logo: 'favicon/icon.svg',
 		head: [
 			['link', { rel: 'icon', href: '/favicon/favicon.ico', type: 'image/x-icon', sizes: 'any' }],
 			['link', { rel: 'icon', href: '/favicon/icon.svg', type: 'image/svg+xml'}],
