@@ -8,7 +8,7 @@ module.exports = {
 	themeConfig: {
 		logo: '/images/icons/favicon.svg',
 		head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
-		nav: [
+		navbar: [
 			{ text: 'Website', link: 'https://www.codenotary.io' },
 			{ text: 'Github', link: 'https://github.com/vchain-us' },
 		],
