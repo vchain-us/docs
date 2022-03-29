@@ -1,7 +1,7 @@
 module.exports = {
-	title: 'CodeNotary Documentation',
-	description: ' ',
-	dest: './docs',
+	title: 'Codenotary Documentation',
+	description: 'Codenotary Documentation',
+	dest: './docsi',
 	themeConfig: {
 		logo: '/codenotary-mascot.png',
 		nav: [
