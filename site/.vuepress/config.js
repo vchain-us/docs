@@ -1,9 +1,19 @@
 module.exports = {
 	title: 'Codenotary Documentation',
 	description: 'Codenotary Documentation',
-	dest: './docsi',
+	dest: './docs',
+	plugins: [
+		'@vuepress/plugin-palette',
+	],
 	themeConfig: {
 		logo: '/codenotary-mascot.png',
+		head: [
+			['link', { rel: 'icon', href: '/favicon/favicon.ico', type: 'image/x-icon', sizes: 'any' }],
+			['link', { rel: 'icon', href: '/favicon/icon.svg', type: 'image/svg+xml'}],
+			['link', { rel: 'apple-touch-icon', href: '/favicon/apple-touch-icon.png' }],
+			['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
+			['meta', { name: 'theme-color', content: '#244583' }],
+		],
 		nav: [
 			{ text: 'Website', link: 'https://www.codenotary.io' },
 			{ text: 'Github', link: 'https://github.com/vchain-us' },
