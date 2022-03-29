@@ -2,7 +2,7 @@
 home: true
 heroImage: '/codenotary-mascot.png'
 actions: 
-- text: 🚀Start here! 
+- text: 🚀 Start here! 
   link: /guide/quickhelp
 features:
 - title: Integrity and Authenticity always
@@ -13,7 +13,7 @@ features:
 
 - title: Ready within seconds
   details: Sign up with your email or GitHub account and start notarizing and authenticating software assets in 1 step
-footer: © vChain Inc.
+footer: ©Codenotary
 ---
 
 ## Codenotary - The Trust and Integrity platform for the Cloud native environment
