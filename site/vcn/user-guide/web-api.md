@@ -102,7 +102,7 @@ Example of a trusted asset with all field populated:
   "createdAt": "2019-09-25T14:01:23.159792",
   "verificationCount": 3,
   "signerCount": 1,
-  "signer": "leonardo@vchain.us",
+  "signer": "user@vchain.us",
   "company": "vChain",
   "website": "https://codenotary.io",
   "verification": {
