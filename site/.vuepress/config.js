@@ -6,14 +6,8 @@ module.exports = {
 	dest: './docs',
 	theme: path.resolve(__dirname, './theme'),
 	themeConfig: {
-		logo: 'favicon/icon.svg',
-		head: [
-			['link', { rel: 'icon', href: '/favicon/favicon.ico', type: 'image/x-icon', sizes: 'any' }],
-			['link', { rel: 'icon', href: '/favicon/icon.svg', type: 'image/svg+xml'}],
-			['link', { rel: 'apple-touch-icon', href: '/favicon/apple-touch-icon.png' }],
-			['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
-			['meta', { name: 'theme-color', content: '#244583' }],
-		],
+		logo: '/images/icons/favicon.svg',
+		head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
 		nav: [
 			{ text: 'Website', link: 'https://www.codenotary.io' },
 			{ text: 'Github', link: 'https://github.com/vchain-us' },
