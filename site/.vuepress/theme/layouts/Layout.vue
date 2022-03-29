@@ -65,6 +65,19 @@ html.dark {
 	filter: invert(90%);
 }
 
+.search-box {
+	order: -1;
+	margin-right: 2em;
+}
+
+.search-box input {
+	min-width: 16ch;
+}
+
+.search-box input:focus {
+	min-width: 30ch;
+}
+
 .home .hero .action-button.primary {
 	color: var(--white);
 }

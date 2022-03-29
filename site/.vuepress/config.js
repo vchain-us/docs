@@ -5,6 +5,18 @@ module.exports = {
 	description: 'Codenotary Documentation',
 	dest: './docs',
 	theme: path.resolve(__dirname, './theme'),
+	plugins: [
+		[
+			'@vuepress/plugin-search',
+			{
+				locales: {
+					'/': {
+						placeholder: 'Search',
+					},
+				},
+			},
+		],
+	],
 	themeConfig: {
 		logo: '/images/icons/favicon.svg',
 		head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
