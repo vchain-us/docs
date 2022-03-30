@@ -1,5 +1,10 @@
 ## Codenotary Docs 
 
+### Archived
+This documentation lies on the old Blockchain service and is not accurate or relevant anymore
+
+
+
 Site: [docs.codenotary.io](https://docs.codenotary.io/)
 
 Repository: vchain-us/docs
